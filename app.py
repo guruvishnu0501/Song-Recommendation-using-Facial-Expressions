@@ -5,7 +5,7 @@ import random
 app = Flask(__name__)
 
 # 🔑 Put your YouTube API Key
-YOUTUBE_API_KEY = "AIzaSyC8oExTPG3CuhyIJBYfCBILu_b_tO4m748"
+YOUTUBE_API_KEY = "****"
 
 
 # =========================
