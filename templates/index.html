@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Emotion Music Recommender</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        video {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            border: 2px solid white;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        .song-card {
+            background: #1e293b;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🎵 Emotion Music Recommender</h1>
+
+<!-- 🎥 Camera -->
+<video id="video" autoplay playsinline></video>
+
+<br>
+
+<!-- 🎯 Button -->
+<button onclick="captureImage()">Detect Emotion</button>
+
+<!-- Hidden canvas -->
+<canvas id="canvas" style="display:none;"></canvas>
+
+<!-- Result -->
+<h2 id="emotionText"></h2>
+
+<!-- Songs -->
+<div id="songs"></div>
+
+<!-- ✅ Correct Script Path -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
